@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+
 import './index.css';
-import App from './App';
+
+
+
+import CompLayout from './component/compLayout'
 import reportWebVitals from './reportWebVitals';
+
+
+import ptBR from "antd/es/locale/pt_BR";
+
+import { ConfigProvider } from "antd";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    < ConfigProvider locale={ptBR}>
+    <CompLayout />
+    
+
+
+ 
+
+    </ConfigProvider>
   </React.StrictMode>
 );
 
