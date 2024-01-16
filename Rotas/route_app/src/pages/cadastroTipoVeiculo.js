@@ -19,10 +19,10 @@ const { TextArea } = Input;
 
 
 const FormDisabledDemo = () => {
- 
-  return (
-    <>
-      
+  
+ //if (1==1){
+  return (   
+    <>      
       <Form
         labelCol={{
           span: 4,
@@ -36,19 +36,25 @@ const FormDisabledDemo = () => {
           maxWidth: 600,
         }}
       >      
-      
         <Form.Item label="Tipo Veículo">
           <Input />
         </Form.Item>
+
         <Form.Item label="Qtd. Lugares">
           <InputNumber />
         </Form.Item>
        
        
-      
-        <Form.Item label="Descrição">
-          <TextArea rows={4} placeholder="Descrever detalhes do veículos"/>
-        </Form.Item>
+      {
+      1 == 0 ? 
+      (<Form.Item label="Descrição">
+        <TextArea  rows={4} placeholder="Descrever detalhes do veículos"/>
+      </Form.Item>)
+      :
+      ("")
+
+      }
+        
         
         <Form.Item label="">
           <Button>Cadastrar
@@ -58,5 +64,10 @@ const FormDisabledDemo = () => {
       </Form>
     </>
   );
+ 
+ 
+  
 };
+
+
 export default () => <FormDisabledDemo />;

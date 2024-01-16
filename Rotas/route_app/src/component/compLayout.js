@@ -61,9 +61,10 @@ const App = () => {
           <Content style={{ margin: '0 16px' }}>
             <div style={{ padding: 24, minHeight: 360, background: colorBgContainer, borderRadius: borderRadiusLG }}>
               <Routes>
+                
                 <Route path='/' element={<div>Inicio</div>} />         
                 <Route path='/cadastroTipoVeiculo' element={<CadastroTipoVeiculo />} />
-                <Route path='/cadastroMensagem' element={<CadastroMensagem />} />
+                <Route path='/cadastroMensagem' element={<CadastroMensagem />}/>
                 <Route path='/CadastroTarifa' element={<CadastroTarifa />} />
                 <Route path='/cadastroRota' element={<CadastroRota />} />
                 <Route path='/extratoTransporteExtra' element={<ExtratoTransporteExtra />} />                
